@@ -10,8 +10,11 @@ package funciones;
  * @author Curacao
  */
 public class atributos {
+
+    
     String nombre;
     String precio;
+    String descripcion;
     
     public atributos(){}
 
@@ -31,6 +34,12 @@ public class atributos {
         this.precio = precio;
     }
     
-    
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
     
 }

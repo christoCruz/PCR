@@ -146,15 +146,14 @@
         </div>
     </div>
 
-
-    <div class="section section-our-clients-freebie">
+<div class="section section-our-clients-freebie">
         <div class="container">
             <div class="title-area">
                 <h5 class="subtitle text-gray">Conoce nuestros:</h5>
                 <h2>Productos</h2>
                 <div class="separator separator-info">****</div>
             </div>
-
+<!-- estos son va? si ahi va el texto por imagen-->
             <ul class="nav nav-text" role="tablist">
                 <li class="active">
                     <a href="#testimonial1" role="tab" data-toggle="tab">
@@ -177,6 +176,7 @@
                         </div>
                     </a>
                 </li>
+        
             </ul>
 
 
@@ -195,8 +195,6 @@
                     </p>
                 </div>
 
-            </div>
-
         </div>
     </div>
 
@@ -212,20 +210,24 @@
                     <div class="separator line-separator">***</div>
                     <p class="description">Si tienes duda, preguntas o quieres conocer sobre algo llena la siguiente informacion y contactanos</p>
                 </div>
-                  <form>
+                <form action="prncipal/componentes/correo.jsp" method="POST">
                            <div class="row">
                                <div class="col">
                                    <label for="corre">Correo</label>
-                                 <input type="email" class="form-control" id="corre" placeholder="Ingresa tu correo aqui"  >
+                                   <input type="text" name="direccion" class="form-control"  placeholder="Ingresa tu correo aqui"   >
                                </div>
-                                <label for="nom">Contraseña</label>
+                                <label for="nom">Nombre</label>
                                  <div class="col">
-                                 <input type="text" class="form-control" id="nom" placeholder="Ingresa tu nombre aqui">
+                                 <input type="text" name="nombre" class="form-control" placeholder="Ingresa tu nombre aqui" >
                               </div>
+                                
                            </div>
+                    <input type="submit" value="enviar">
+                           
                  </form>
                 <div class="button-get-started">
                     <a href="#gaia" class="btn btn-danger btn-fill btn-lg">Contactar</a>
+                    
                 </div>
             </div>
         </div>
